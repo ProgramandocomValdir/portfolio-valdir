@@ -1,0 +1,180 @@
+/* configuração geral do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+    padding-top: 80px; /* espaço por causa do menu fixo */
+}
+
+/* seção sobre com imagem de fundo */
+#sobre {
+    position: relative;
+    background-image: url("fundo.png"); /* imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* camada escura por cima da imagem para melhorar a leitura */
+#sobre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+}
+
+/* garante que o texto fique na frente da imagem */
+#sobre * {
+    position: relative;
+    z-index: 1;
+}
+
+/* menu de navegação fixo no topo */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+}
+
+/* links do menu */
+nav a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* efeito ao passar o mouse no menu */
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* padrão das seções */
+section {
+    padding: 60px 40px;
+    border-bottom: 1px solid #1f2933;
+}
+
+/* título principal */
+h1 {
+    color: #38bdf8;
+}
+
+/* seção formação */
+#formacao {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* blocos de formação */
+.bloco-formacao {
+    background: #0f172a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* estilo dos projetos */
+.projeto {
+    background: #0f172a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* botão dos projetos */
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* seção contato */
+#contato {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* texto de descrição do contato */
+.descricao-contato {
+    margin-bottom: 20px;
+}
+
+/* área dos botões (github, whatsapp, linkedin) */
+.redes-contato {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* estilo dos botões */
+.redes-contato a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* cores específicas de cada botão */
+.github { background: #181717; }
+.whatsapp { background: #25D366; }
+.linkedin { background: #0077b5; }
+
+/* efeito ao passar o mouse nos botões */
+.redes-contato a:hover {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+}
+
+/* container do formulário */
+.container-contato {
+    display: flex;
+    justify-content: center;
+}
+
+/* formulário */
+form {
+    max-width: 400px;
+    width: 100%;
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza o botão */
+}
+
+/* campos de entrada */
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #1f2937;
+    color: white;
+}
+
+/* botão enviar */
+button {
+    width: auto;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
