@@ -40,8 +40,10 @@ nav {
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
-    padding: 15px;
+    padding: 15px 10px;
+    box-sizing: border-box;
 }
 
 /* links do menu */
@@ -49,6 +51,7 @@ nav a {
     color: #cbd5f5;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s;
 }
 
 /* efeito ao passar o mouse no menu */
@@ -177,4 +180,19 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* ===== AJUSTE MOBILE ===== */
+@media (max-width: 768px) {
+
+    nav {
+        gap: 8px;
+        padding: 10px 5px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
 }
