@@ -6,12 +6,13 @@ Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, com objetivo de apre
 - HTML5
 - CSS3
 - JavaScript
+- EmailJS
 - Git e GitHub
 
 ## 📌 Funcionalidades
 - Navegação entre seções
 - Layout responsivo
-- Formulário de contato com validação
+- Formulário de contato funcional com envio de e-mail
 - Links para redes profissionais
 
 ## 📸 Preview
@@ -23,3 +24,5 @@ Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, com objetivo de apre
 ## 📬 Contato
 - GitHub: https://github.com/ProgramandocomValdir
 - LinkedIn: https://www.linkedin.com/in/valdir-barboza-sales-266b54160/
+- WhatsApp: https://wa.me/5541985360244
+  
