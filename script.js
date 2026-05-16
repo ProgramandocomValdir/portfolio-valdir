@@ -1,7 +1,7 @@
- // configuração do EmailJS
-const SERVICE_ID  = 'service_wutyq25';
-const TEMPLATE_ID = 'g9g3r2m';
-const PUBLIC_KEY  = 'MEVyTMJvjgXoROu3E';
+// configuração do EmailJS
+const SERVICE_ID  = 'service_m86vepe';
+const TEMPLATE_ID = 'template_zvgqeqq';
+const PUBLIC_KEY  = 'nYE1mCuYeiFR1EVS3';
 
 emailjs.init(PUBLIC_KEY);
 
