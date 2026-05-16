@@ -123,15 +123,18 @@
 
     <!-- formulário de contato -->
     <div class="container-contato">
-        <form>
-            <input type="text" placeholder="Nome Completo" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+        <form id="contactForm">
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit" id="sendBtn">Enviar</button>
+            <p id="statusMsg" style="margin-top:10px;font-size:14px;"></p>
         </form>
     </div>
 </section>
 
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <!-- ligação com o JavaScript -->
 <script src="script.js"></script>
 
